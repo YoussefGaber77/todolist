@@ -3,7 +3,7 @@ const DataBaseconnection = async() => {
 
 
     await mongoose.connect(
-        "mongodb+srv://haniaomar:haniaomar@cluster.24wbf.mongodb.net/todos?retryWrites=true&w=majority", {
+        "mongodb://"+process.env.IP+"27017/todos", {
             useNewUrlParser: true,
             useCreateIndex: true,
             useUnifiedTopology: true,
